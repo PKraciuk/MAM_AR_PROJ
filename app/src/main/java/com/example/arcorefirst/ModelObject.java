@@ -32,7 +32,7 @@ public class ModelObject implements Serializable {
         }
     }
 
-    public void remove() {
+    public void delete() {
         if (anchorNode != null) {
             anchorNode.setParent(null); // Remove the node from the scene
         }

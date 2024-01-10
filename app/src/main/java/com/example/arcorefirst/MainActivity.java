@@ -94,7 +94,7 @@ public class MainActivity extends AppCompatActivity {
         arFragment.getArSceneView().getScene().addChild(anchorNode);
         node.select();
         ArrayList<ModelObject> modelObjects = GlobalData.getInstance().getModelObjects();
-        modelObjects.add(new ModelObject("Test Name", anchorNode, renderable));
+        modelObjects.add(new ModelObject("Cube", anchorNode, renderable));
     }
 
     private boolean checkIsSupportedDeviceOrFinish(final Activity activity) {

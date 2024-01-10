@@ -56,6 +56,7 @@ public class ModelAdapter extends BaseAdapter {
 
         buttonDelete.setOnClickListener(v -> {
             modelObjects.remove(position);
+            modelObjects.get(position).delete();
             notifyDataSetChanged();
         });
 
